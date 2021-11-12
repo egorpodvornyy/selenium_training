@@ -1,3 +1,3 @@
 # selenium_training
 
-Hello
+Hello, world!
