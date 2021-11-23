@@ -83,10 +83,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="177" />
-    <option name="y" value="28" />
+    <option name="x" value="176" />
+    <option name="y" value="27" />
     <option name="width" value="1630" />
-    <option name="height" value="974" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,7 +158,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PresentPagesTest">
+  <component name="RunManager" selected="JUnit.ClickLinksToSidebar">
+    <configuration name="ClickLinksToSidebar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-java-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.selenium.raif.maven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.selenium.raif.maven" />
+      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.ClickLinksToSidebar" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClickLinksToSidebar.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium-java-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.selenium.raif.maven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.selenium.raif.maven" />
+      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.ClickLinksToSidebar" />
+      <option name="METHOD_NAME" value="testSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginInLitecart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-maven" />
       <extension name="coverage">
@@ -189,41 +220,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PresentPagesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-java-maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.selenium.raif.maven.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.selenium.raif.maven" />
-      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.PresentPagesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PresentPagesTest.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenium-java-maven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.selenium.raif.maven.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.selenium.raif.maven" />
-      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.PresentPagesTest" />
-      <option name="METHOD_NAME" value="testSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PresentPagesTest" />
-        <item itemvalue="JUnit.PresentPagesTest.testSearch" />
+        <item itemvalue="JUnit.ClickLinksToSidebar" />
+        <item itemvalue="JUnit.ClickLinksToSidebar.testSearch" />
         <item itemvalue="JUnit.MyFirstTest" />
         <item itemvalue="JUnit.LoginInLitecart" />
       </list>

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class PresentPagesTest {
+public class ClickLinksToSidebar {
     private WebDriver driver;
     private WebDriverWait wait;
     private int amountElements;
