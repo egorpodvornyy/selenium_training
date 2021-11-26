@@ -37,8 +37,8 @@ public class CheckStickersOnProducts {
                         products.get(i).getText());
             };
 
-            if(products.get(i).findElements(By.cssSelector("div.sticker")).size() == 2) {
-                throw new Exception("На элементе " + products.get(i).getText() + " присутствуют 2 стикера");
+            if(products.get(i).findElements(By.cssSelector("div.sticker")).size() > 1) {
+                throw new Exception("Количество стикеров на элементе " + products.get(i).getText() + " больше одного");
             }
         }
     }
