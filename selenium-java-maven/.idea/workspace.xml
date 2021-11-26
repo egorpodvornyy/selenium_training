@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="323">
               <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckStickersOnProducts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="391">
               <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,12 +76,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckAttributesAndStylesProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1637927244996" expanded="true" signature="1057:5771" ph="..." />
-                <marker date="1637927244996" expanded="true" signature="2298:3160" ph="..." />
+                <marker date="1637930263417" expanded="true" signature="1201:5934" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckSortedCountriesAndZones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="1615">
               <caret line="105" selection-start-line="105" selection-end-line="109" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/selenium/raif/maven/AutorizationInLitecart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -169,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +227,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,7 +318,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckAttributesProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckAttributesAndStylesProduct.checkSizeFontPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenium-java-maven" />
       <extension name="coverage">
         <pattern>
@@ -328,26 +327,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.selenium.raif.maven" />
-      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.CheckAttributesProduct" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ru.selenium.raif.maven.CheckAttributesAndStylesProduct" />
+      <option name="METHOD_NAME" value="checkSizeFontPrice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CheckAttributesProduct" />
       <item itemvalue="JUnit.CheckAttributesAndStylesProduct" />
       <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkPriceProduct" />
       <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" />
       <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" />
+      <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkSizeFontPrice" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CheckAttributesAndStylesProduct" />
-        <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" />
         <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" />
+        <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" />
+        <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkSizeFontPrice" />
         <item itemvalue="JUnit.CheckAttributesAndStylesProduct.checkPriceProduct" />
-        <item itemvalue="JUnit.CheckAttributesProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -365,34 +365,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 17h 44m 23s.xml">
+    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 18h 31m 43s.xml">
+      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 32m 27s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 33m 13s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 18h 34m 39s.xml">
       <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 17h 44m 51s.xml">
+    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 18h 35m 13s.xml">
       <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 17h 45m 15s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" configurationId="JUnit" />
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 36m 07s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontRegularPrice - 2021.11.26 at 17h 45m 39s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontRegularPrice" configurationId="JUnit" />
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 36m 38s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 17h 46m 07s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 37m 33s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 17h 46m 30s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 38m 17s.xml">
+      <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 17h 46m 56s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 17h 47m 18s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct_checkFormatAndColorFontCampaignPrice - 2021.11.26 at 17h 47m 35s.xml">
-      <configuration name="CheckAttributesAndStylesProduct.checkFormatAndColorFontCampaignPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 17h 48m 07s.xml">
+    <history-entry file="CheckAttributesAndStylesProduct - 2021.11.26 at 18h 39m 17s.xml">
       <configuration name="CheckAttributesAndStylesProduct" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -400,7 +400,7 @@
     <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2932886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29731545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -507,10 +507,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/selenium/raif/maven/CheckAttributesProduct.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/builders/JUnit4Builder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/MyFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1637141338575" expanded="true" signature="925:1288" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,40 +553,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/selenium/raif/maven/AutorizationInLitecart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/MyFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1637141338575" expanded="true" signature="925:1288" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/selenium/raif/maven/CheckAttributesProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckStickersOnProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="391">
           <caret line="34" column="86" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -577,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckSortedCountriesAndZones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="1615">
           <caret line="105" selection-start-line="105" selection-end-line="109" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -585,21 +573,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/builders/JUnit4Builder.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/selenium/raif/maven/AutorizationInLitecart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="153">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/selenium/raif/maven/CheckAttributesAndStylesProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1637927244996" expanded="true" signature="1057:5771" ph="..." />
-            <marker date="1637927244996" expanded="true" signature="2298:3160" ph="..." />
+            <marker date="1637930263417" expanded="true" signature="1201:5934" ph="..." />
           </folding>
         </state>
       </provider>

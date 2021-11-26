@@ -4,6 +4,9 @@ import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverInfo;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +23,7 @@ public class CheckAttributesAndStylesProduct {
 
     @Before
     public void start() {
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 2);
         driver.get("http://localhost/litecart/en/");
@@ -94,8 +97,9 @@ public class CheckAttributesAndStylesProduct {
 
     @Test
     public void checkFormatAndColorFontCampaignPrice() throws Exception {
-        if (!driver.findElement(By.cssSelector(campaignPriceStartPage)).
-                getCssValue("font-weight").equals("700")) {
+
+        if (Integer.parseInt(driver.findElement(By.cssSelector(campaignPriceStartPage)).
+                getCssValue("font-weight")) < 600) {
 
             throw new Exception("На главной странице акционная цена товара " + driver.findElement(
                     By.cssSelector("#box-campaigns a.link[title='Yellow Duck'] div.name")).
@@ -113,8 +117,8 @@ public class CheckAttributesAndStylesProduct {
 
         clickOnProduct();
 
-        if (!driver.findElement(By.cssSelector(campaignPriceProductPage)).
-                getCssValue("font-weight").equals("700")) {
+        if (Integer.parseInt(driver.findElement(By.cssSelector(campaignPriceProductPage)).
+                getCssValue("font-weight")) < 600) {
 
             throw new Exception("На странице товара акционная цена товара " + driver.findElement(
                     By.cssSelector("#box-product h1")).
@@ -134,7 +138,6 @@ public class CheckAttributesAndStylesProduct {
 
     @Test
     public void checkSizeFontPrice() throws Exception {
-
         if (Double.parseDouble(driver.findElement(By.cssSelector(regularPriceStartPage)).getCssValue(
                 "font-size").replaceAll("[^0-9.]", "")) >=
                 Double.parseDouble(driver.findElement(By.cssSelector(campaignPriceStartPage)).getCssValue(
