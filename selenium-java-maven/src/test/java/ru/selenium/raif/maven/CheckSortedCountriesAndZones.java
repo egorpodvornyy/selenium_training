@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +16,8 @@ public class CheckSortedCountriesAndZones {
     private WebDriver driver;
     private WebDriverWait wait;
     private List<WebElement> countries;
+    private List<WebElement> zones;
+    private List<String> elementText = new ArrayList<>();
     private int rowsNumb1;
     private int rowsNumb2;
 
@@ -35,26 +38,33 @@ public class CheckSortedCountriesAndZones {
 
         countries = driver.findElements(By.xpath("//*[@class='row'] //td[5]"));
 
-        for (int i = 0; i < countries.size() - 1; i++) {
-            if (countries.get(i).getAttribute("textContent").compareTo(
-                    countries.get(i + 1).getAttribute("textContent")) == 1) {
+        for (int i = 0; i < countries.size(); i++) {
+            elementText.add(countries.get(i).getAttribute("textContent"));
+        }
+
+        for (int i = 0; i < elementText.size() - 1; i++) {
+            if (elementText.get(i).compareTo(elementText.get(i + 1)) == 1) {
                 throw new Exception("Страны неотсортированы по алфавиту");
             }
         }
 
-        for (int i = 2; i < countries.size() + 2; i++) {
+        for (int i = 2; i < countries.size() + 1; i++) {
             if (Integer.parseInt(driver.findElement(By.cssSelector(".row:nth-of-type(" + i + ") td:nth-of-type(6)")).
                     getAttribute("textContent")) != 0) {
+
                 driver.findElement(By.cssSelector(".row:nth-of-type(" + i + ") td:nth-of-type(5) a")).click();
 
-                rowsNumb1 = driver.findElements(By.cssSelector("table #table-zones tr:not(.header)")).size() - 1;
+                zones = driver.findElements(By.cssSelector("table #table-zones tr:not(.header)"));
 
-                for (int j = 2; j < rowsNumb1 + 1; j++) {
+                elementText.clear();
 
-                    if (driver.findElement(By.cssSelector("#table-zones tr:not(.header):nth-of-type(" +  j + ") td:nth-of-type(3)")).
-                            getAttribute("textContent").compareTo(
-                            driver.findElement(By.cssSelector("#table-zones tr:not(.header):nth-of-type(" +  (j + 1) + ") td:nth-of-type(3)")).
-                                    getAttribute("textContent")) == 1) {
+                for (int j = 0; j < zones.size() - 1; j++) {
+                    elementText.add(zones.get(j).getAttribute("textContent"));
+                }
+
+                for (int j = 0; j < elementText.size() - 1; j++) {
+
+                    if (elementText.get(j).compareTo(elementText.get(j + 1)) == 1) {
 
                         driver.navigate().back();
 
@@ -81,23 +91,22 @@ public class CheckSortedCountriesAndZones {
 
             rowsNumb2 = driver.findElements(By.cssSelector("#table-zones tr:not(.header)")).size();
 
-            for (int j = 2; j < rowsNumb2; j++) {
-                String i1 = driver.findElement(By.cssSelector("tr:nth-of-type(" + (j) + ") td:nth-of-type(3) option[selected=selected")).
-                        getAttribute("textContent");
-                String i2 = driver.findElement(By.cssSelector("tr:nth-of-type(" + (j+1) + ") td:nth-of-type(3) option[selected=selected")).
-                        getAttribute("textContent");
+            for (int j = 2; j < rowsNumb2 + 1; j++) {
+                elementText.add(driver.findElement(By.cssSelector(
+                        "tr:nth-of-type(" + (j) + ") td:nth-of-type(3) option[selected=selected")).
+                        getAttribute("textContent"));
+            }
 
-                if (driver.findElement(By.cssSelector("tr:nth-of-type(" + (j) + ") td:nth-of-type(3) option[selected=selected")).
-                        getAttribute("textContent").compareTo(
-                            driver.findElement(By.cssSelector("tr:nth-of-type(" + (j+1) + ") td:nth-of-type(3) option[selected=selected")).
-                                    getAttribute("textContent")) == 1) {
+            for (int j = 0; j < elementText.size() - 1; j++) {
+
+                if (elementText.get(j).compareTo(elementText.get(j + 1)) == 1) {
 
                     driver.navigate().back();
 
                     throw new Exception("Геозоны страны " + driver.findElement(By.xpath("//*[@class='row'][" + i + "] //td[3]")).
-                                getAttribute("textContent") + " неотсортированы по алфавиту");
-                    }
+                            getAttribute("textContent") + " неотсортированы по алфавиту");
                 }
+            }
 
             driver.navigate().back();
         }
